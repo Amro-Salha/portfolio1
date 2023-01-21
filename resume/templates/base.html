@@ -1,0 +1,144 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock title %}</title>
+    <link rel="stylesheet" href="{% static "css/resume.css" %}">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+        </style>
+</head>
+<header>
+    <nav class="navbar">
+        <div class="navbar-nav">
+            <div class="navbar-item">
+                <a href="#" class="nav-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M184 48H328c4.4 0 8 3.6 8 8V96H176V56c0-4.4 3.6-8 8-8zm-56 8V96H64C28.7 96 0 124.7 0 160v96H192 320 512V160c0-35.3-28.7-64-64-64H384V56c0-30.9-25.1-56-56-56H184c-30.9 0-56 25.1-56 56zM512 288H320v32c0 17.7-14.3 32-32 32H224c-17.7 0-32-14.3-32-32V288H0V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V288z"/></svg>
+                    <span class="link-text">
+                        <div class="wavy">
+                            <div class="button">
+
+                                <span style="--i:1;">W</span>
+                                <span style="--i:2;">O</span>
+                                <span style="--i:3;">R</span>
+                                <span style="--i:4;">K</span>
+                                <span style="--i:5;">H</span>
+                                <span style="--i:6;">I</span>
+                                <span style="--i:7;">S</span>
+                                <span style="--i:8;">T</span>
+                                <span style="--i:9;">O</span>
+                                <span style="--i:10;">R</span>
+                                <span style="--i:11;">Y</span>
+                                <span style="--i:12;">></span>
+
+                            </div>
+                        </div>
+                    </span>
+                </a>
+            </div>
+            <div class="navbar-item">
+                <a href="#" class="nav-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M320 32c-8.1 0-16.1 1.4-23.7 4.1L15.8 137.4C6.3 140.9 0 149.9 0 160s6.3 19.1 15.8 22.6l57.9 20.9C57.3 229.3 48 259.8 48 291.9v28.1c0 28.4-10.8 57.7-22.3 80.8c-6.5 13-13.9 25.8-22.5 37.6C0 442.7-.9 448.3 .9 453.4s6 8.9 11.2 10.2l64 16c4.2 1.1 8.7 .3 12.4-2s6.3-6.1 7.1-10.4c8.6-42.8 4.3-81.2-2.1-108.7C90.3 344.3 86 329.8 80 316.5V291.9c0-30.2 10.2-58.7 27.9-81.5c12.9-15.5 29.6-28 49.2-35.7l157-61.7c8.2-3.2 17.5 .8 20.7 9s-.8 17.5-9 20.7l-157 61.7c-12.4 4.9-23.3 12.4-32.2 21.6l159.6 57.6c7.6 2.7 15.6 4.1 23.7 4.1s16.1-1.4 23.7-4.1L624.2 182.6c9.5-3.4 15.8-12.5 15.8-22.6s-6.3-19.1-15.8-22.6L343.7 36.1C336.1 33.4 328.1 32 320 32zM128 408c0 35.3 86 72 192 72s192-36.7 192-72L496.7 262.6 354.5 314c-11.1 4-22.8 6-34.5 6s-23.5-2-34.5-6L143.3 262.6 128 408z"/></svg>
+                    <span class="link-text">
+                        <div class="wavy">
+                            <div class="button">
+
+                                <span style="--i:1;">E</span>
+                                <span style="--i:2;">D</span>
+                                <span style="--i:3;">U</span>
+                                <span style="--i:4;">C</span>
+                                <span style="--i:5;">A</span>
+                                <span style="--i:6;">T</span>
+                                <span style="--i:7;">I</span>
+                                <span style="--i:8;">O</span>
+                                <span style="--i:9;">N</span>
+                                <span style="--i:10;">></span>
+
+                            </div>
+                        </div>
+                    </span>
+                </a>
+            </div>
+            <div class="navbar-item">
+                <a href="#" class="nav-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M413.5 237.5c-28.2 4.8-58.2-3.6-80-25.4l-38.1-38.1C280.4 159 272 138.8 272 117.6V105.5L192.3 62c-5.3-2.9-8.6-8.6-8.3-14.7s3.9-11.5 9.5-14l47.2-21C259.1 4.2 279 0 299.2 0h18.1c36.7 0 72 14 98.7 39.1l44.6 42c24.2 22.8 33.2 55.7 26.6 86L503 183l8-8c9.4-9.4 24.6-9.4 33.9 0l24 24c9.4 9.4 9.4 24.6 0 33.9l-88 88c-9.4 9.4-24.6 9.4-33.9 0l-24-24c-9.4-9.4-9.4-24.6 0-33.9l8-8-17.5-17.5zM27.4 377.1L260.9 182.6c3.5 4.9 7.5 9.6 11.8 14l38.1 38.1c6 6 12.4 11.2 19.2 15.7L134.9 484.6c-14.5 17.4-36 27.4-58.6 27.4C34.1 512 0 477.8 0 435.7c0-22.6 10.1-44.1 27.4-58.6z"/></svg>
+                    <span class="link-text">
+                        <div class="wavy">
+                            <div class="button">
+
+                                <span style="--i:1;">P</span>
+                                <span style="--i:2;">R</span>
+                                <span style="--i:3;">O</span>
+                                <span style="--i:4;">J</span>
+                                <span style="--i:5;">E</span>
+                                <span style="--i:6;">C</span>
+                                <span style="--i:7;">T</span>
+                                <span style="--i:8;">S</span>
+                                <span style="--i:9;">></span>
+
+                            </div>
+                        </div>
+                    </span>
+                </a>
+            </div>
+            <div class="navbar-item">
+                <a href="#" class="nav-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M208 48c0 26.5-21.5 48-48 48s-48-21.5-48-48s21.5-48 48-48s48 21.5 48 48zM152 352V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V256.9L59.4 304.5c-9.1 15.1-28.8 20-43.9 10.9s-20-28.8-10.9-43.9l58.3-97c17.4-28.9 48.6-46.6 82.3-46.6h29.7c33.7 0 64.9 17.7 82.3 46.6l58.3 97c9.1 15.1 4.2 34.8-10.9 43.9s-34.8 4.2-43.9-10.9L232 256.9V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V352H152z"/></svg>
+                    <span class="link-text">
+                        <div class="wavy">
+                            <div class="button">
+
+                                <span style="--i:1;">P</span>
+                                <span style="--i:2;">E</span>
+                                <span style="--i:3;">R</span>
+                                <span style="--i:4;">S</span>
+                                <span style="--i:5;">O</span>
+                                <span style="--i:6;">N</span>
+                                <span style="--i:7;">A</span>
+                                <span style="--i:8;">L</span>
+                                <span style="--i:9;">></span>
+
+                            </div>
+                        </div>
+                    </span>
+                </a>
+            </div>
+            <div class="navbar-item">
+                <a href="#" class="nav-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M0 96l576 0c0-35.3-28.7-64-64-64H64C28.7 32 0 60.7 0 96zm0 32V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V128H0zM64 405.3c0-29.5 23.9-53.3 53.3-53.3H234.7c29.5 0 53.3 23.9 53.3 53.3c0 5.9-4.8 10.7-10.7 10.7H74.7c-5.9 0-10.7-4.8-10.7-10.7zM176 320c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64zM352 208c0-8.8 7.2-16 16-16H496c8.8 0 16 7.2 16 16s-7.2 16-16 16H368c-8.8 0-16-7.2-16-16zm0 64c0-8.8 7.2-16 16-16H496c8.8 0 16 7.2 16 16s-7.2 16-16 16H368c-8.8 0-16-7.2-16-16zm0 64c0-8.8 7.2-16 16-16H496c8.8 0 16 7.2 16 16s-7.2 16-16 16H368c-8.8 0-16-7.2-16-16z"/></svg>
+                    <span class="link-text">
+                        <div class="wavy">
+                            <div class="button">
+
+                                <span style="--i:1;">C</span>
+                                <span style="--i:2;">O</span>
+                                <span style="--i:3;">N</span>
+                                <span style="--i:4;">T</span>
+                                <span style="--i:5;">A</span>
+                                <span style="--i:6;">C</span>
+                                <span style="--i:7;">T</span>
+                                <span style="--i:8;">></span>
+
+                            </div>
+                        </div>
+                    </span>
+                </a>
+            </div>
+
+        <div>
+    </nav>
+</header>
+<body>
+
+    <main>
+        {% block content %}{% endblock content %}
+    </main>
+
+</body>
+<footer>
+    <!-- <h3>Everything on this website was 100% developed by me; Amro Salha</h3> -->
+</footer>
+</html>
